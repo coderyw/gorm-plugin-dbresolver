@@ -4,7 +4,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"gorm.io/gorm"
+	"github.com/coderyw/gorm"
 )
 
 func TestPolicy_RoundRobinPolicy(t *testing.T) {

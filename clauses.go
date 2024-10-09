@@ -1,8 +1,8 @@
 package dbresolver
 
 import (
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
+	"github.com/coderyw/gorm"
+	"github.com/coderyw/gorm/clause"
 )
 
 // Operation specifies dbresolver mode

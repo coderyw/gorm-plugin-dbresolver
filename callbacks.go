@@ -3,7 +3,7 @@ package dbresolver
 import (
 	"strings"
 
-	"gorm.io/gorm"
+	"github.com/coderyw/gorm"
 )
 
 func (dr *DBResolver) registerCallbacks(db *gorm.DB) {

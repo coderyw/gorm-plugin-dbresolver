@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"gorm.io/gorm"
+	"github.com/coderyw/gorm"
 )
 
 const (
@@ -141,9 +141,9 @@ func (dr *DBResolver) convertToConnPool(dialectors []gorm.Dialector) (connPools 
 			}
 
 			dr.prepareStmtStore[connPool] = &gorm.PreparedStmtDB{
-				ConnPool:    db.Config.ConnPool,
-				Stmts:       map[string]*gorm.Stmt{},
-				Mux:         &sync.RWMutex{},
+				ConnPool: db.Config.ConnPool,
+				Stmts:    map[string]*gorm.Stmt{},
+				Mux:      &sync.RWMutex{},
 			}
 
 			connPools = append(connPools, connPool)

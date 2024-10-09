@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"sync/atomic"
 
-	"gorm.io/gorm"
+	"github.com/coderyw/gorm"
 )
 
 type Policy interface {
