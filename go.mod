@@ -1,4 +1,4 @@
-module gorm.io/plugin/dbresolver
+module github.com/coderyw/gorm-plugin-dbresolver
 
 go 1.18
 
@@ -13,3 +13,7 @@ require (
 	github.com/jinzhu/now v1.1.5 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )
+
+replace gorm.io/gorm => gorm.io/gorm v1.25.11
+
+replace gorm.io/gorm v1.25.12 => github.com/coderyw/gorm v0.0.5
